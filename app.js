@@ -14,13 +14,13 @@ const server = http.createServer((request, response) => {
 });
 
 //STEP2: Start the server
-/*server.listen(80, 'nodejs-course-4d9b2b12e029.herokuapp.com', ()=>{
-    console.log('Server has started');
-})*/
-
-server.listen(8000, '127.0.0.1', ()=>{
+server.listen(80, 'nodejs-course-4d9b2b12e029.herokuapp.com', ()=>{
     console.log('Server has started');
 })
+
+/*server.listen(8000, '127.0.0.1', ()=>{
+    console.log('Server has started');
+})*/
 
 
 
