@@ -11,5 +11,13 @@
     "heroku"
   ],
   "author": "Akiva",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akivmoovex/NodeJsCourse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akivmoovex/NodeJsCourse/issues"
+  },
+  "homepage": "https://github.com/akivmoovex/NodeJsCourse#readme"
 }
