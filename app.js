@@ -9,19 +9,19 @@ const html = fs.readFileSync('./Template/index.html', 'utf-8')
 const server = http.createServer((request, response) => {
     let path = request.url;
     if (path === '/' || path.toLocaleLowerCase() === '/home'){
-        response.writeHead(200);
+        response.writeHead(200,{'Content-Type': 'text/html'});
         response.end(html.replace('{{%CONTENT%}}', 'You are in Home Page'));
     }
     else if (path.toLocaleLowerCase() === '/about'){
-        response.writeHead(200);
+        response.writeHead(200,{'Content-Type': 'text/html'});
         response.end(html.replace('{{%CONTENT%}}', 'You are in about page'));
     }
     else if (path.toLocaleLowerCase() === '/contact'){
-        response.writeHead(200);
+        response.writeHead(200,{'Content-Type': 'text/html'});
         response.end(html.replace('{{%CONTENT%}}', 'You are in contact page'));
     }
     else{
-        response.writeHead(404);
+        response.writeHead(404,{'Content-Type': 'text/html'});
         response.end(html.replace('{{%CONTENT%}}', 'Error 404: Page not found!'));
     }
 
