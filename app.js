@@ -14,9 +14,10 @@ const server = http.createServer((request, response) => {
 });
 
 //STEP2: Start the server
-server.listen(80, 'nodejs-course-4d9b2b12e029.herokuapp.com', ()=>{
+server.listen(8000, '52.5.82.174', ()=>{
     console.log('Server has started');
 })
+//147.235.218.84
 
 /*server.listen(8000, '127.0.0.1', ()=>{
     console.log('Server has started');
