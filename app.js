@@ -7,11 +7,9 @@ const http = require('http');
 //STEP1: Create a server
 const html = fs.readFileSync('./Template/index.html', 'utf-8')
 const server = http.createServer((request, response) => {
-    response.end(html);
-    console.log("A new request received");
-    //console.log(request);
-    //console.log("Response is: ");
-    //console.log(response);
+    let path = request.url;
+    response.end(path);
+
 });
 
 //STEP2: Start the server
