@@ -6,11 +6,6 @@
   "engines": {
     "node": "20.x"
   },
-  "scripts": {
-    "start": "node app.js",
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "example",
     "heroku"
