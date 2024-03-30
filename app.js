@@ -5,6 +5,7 @@ const fs = require('fs');
 const http = require('http');
 
 //STEP1: Create a server
+const html = fs.readFileSync('./Template/index.html', 'utf-8')
 const server = http.createServer((request, response) => {
     response.end('<h1>This is home page</h1>');
     console.log("A new request received");
