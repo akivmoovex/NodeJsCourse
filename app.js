@@ -6,7 +6,7 @@ const http = require('http');
 
 //STEP1: Create a server
 const server = http.createServer((request, response) => {
-    response.end('Hello from the server');
+    response.end(<h1>'This is home page'</h1>);
     console.log("A new request received");
     //console.log(request);
     //console.log("Response is: ");
