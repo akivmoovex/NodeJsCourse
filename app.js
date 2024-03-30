@@ -14,7 +14,7 @@ const server = http.createServer((request, response) => {
 });
 
 //STEP2: Start the server
-server.listen(8000, '52.5.82.174', ()=>{
+server.listen(8000, '0.0.0.0', ()=>{
     console.log('Server has started');
 })
 //147.235.218.84
