@@ -10,6 +10,7 @@ const server = http.createServer((request, response) => {
     let path = request.url;
     if (path === '/' || path.toLocaleLowerCase() === '/home'){
         response.end('You are in home page');
+    }
     else if (path.toLocaleLowerCase() === '/about'){
         response.end('You are in about page');
     }
