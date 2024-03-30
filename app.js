@@ -14,7 +14,7 @@ const server = http.createServer((request, response) => {
 });
 
 //STEP2: Start the server
-server.listen(80, '0.0.0.0', ()=>{
+server.listen(process.env.PORT || 8000, ()=>{
     console.log('Server has started');
 })
 //147.235.218.84
