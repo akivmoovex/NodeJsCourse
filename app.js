@@ -9,16 +9,16 @@ const html = fs.readFileSync('./Template/index.html', 'utf-8')
 const server = http.createServer((request, response) => {
     let path = request.url;
     if (path === '/' || path.toLocaleLowerCase() === '/home'){
-        response.end(html.replace('{{%content%}}', 'You are in Home Page'));
+        response.end(html.replace('{{%CONTENT%}}', 'You are in Home Page'));
     }
     else if (path.toLocaleLowerCase() === '/about'){
-        response.end(html.replace('{{%content%}}', 'You are in about page');
+        response.end(html.replace('{{%CONTENT%}}', 'You are in about page');
     }
     else if (path.toLocaleLowerCase() === '/contact'){
-        response.end(html.replace('{{%content%}}', 'You are in contact page');
+        response.end(html.replace('{{%CONTENT%}}', 'You are in contact page');
     }
     else{
-        response.end(html.replace('{{%content%}}', 'Error 404: Page not found!');
+        response.end(html.replace('{{%CONTENT%}}', 'Error 404: Page not found!');
     }
 
 });
