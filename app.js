@@ -9,18 +9,18 @@ const server = http.createServer((request, response) => {
     response.end('Hello from the server');
     console.log("A new request received");
     //console.log(request);
-    console.log("Response is: ");
-    console.log(response);
+    //console.log("Response is: ");
+    //console.log(response);
 });
 
 //STEP2: Start the server
-server.listen(80, 'nodejs-course-4d9b2b12e029.herokuapp.com', ()=>{
-    console.log('Server has started');
-})
-
-/*server.listen(8000, '127.0.0.1', ()=>{
+/*server.listen(80, 'nodejs-course-4d9b2b12e029.herokuapp.com', ()=>{
     console.log('Server has started');
 })*/
+
+server.listen(8000, '127.0.0.1', ()=>{
+    console.log('Server has started');
+})
 
 
 
