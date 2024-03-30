@@ -12,13 +12,13 @@ const server = http.createServer((request, response) => {
         response.end(html.replace('{{%CONTENT%}}', 'You are in Home Page'));
     }
     else if (path.toLocaleLowerCase() === '/about'){
-        response.end(html.replace('{{%CONTENT%}}', 'You are in about page');
+        response.end(html.replace('{{%CONTENT%}}', 'You are in about page'));
     }
     else if (path.toLocaleLowerCase() === '/contact'){
-        response.end(html.replace('{{%CONTENT%}}', 'You are in contact page');
+        response.end(html.replace('{{%CONTENT%}}', 'You are in contact page'));
     }
     else{
-        response.end(html.replace('{{%CONTENT%}}', 'Error 404: Page not found!');
+        response.end(html.replace('{{%CONTENT%}}', 'Error 404: Page not found!'));
     }
 
 });
