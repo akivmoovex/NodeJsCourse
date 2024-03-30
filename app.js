@@ -9,7 +9,7 @@ const html = fs.readFileSync('./Template/index.html', 'utf-8')
 const server = http.createServer((request, response) => {
     let path = request.url;
     if (path === '/' || path.toLocaleLowerCase() === '/home'){
-        response.end('You are in home page');
+        response.end(html);
     }
     else if (path.toLocaleLowerCase() === '/about'){
         response.end('You are in about page');
@@ -17,7 +17,9 @@ const server = http.createServer((request, response) => {
     else if (path.toLocaleLowerCase() === '/contact'){
         response.end('You are in contact page');
     }
-    
+    else{
+        response.end('Error 404: Page not found!');
+    }
 
 });
 
