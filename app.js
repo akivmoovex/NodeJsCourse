@@ -1,5 +1,10 @@
 
-const readline = require('readline');
+app.listen(3000, '127.0.0.1', () => {
+  console.log('Listening on 127.0.0.1:3000');
+});
+
+
+/*const readline = require('readline');
 const fs = require('fs');
 
 const http = require('http');
@@ -32,7 +37,7 @@ server.listen(process.env.PORT || 8000, '0.0.0.0', ()=>{
     console.log('Process port', process.env.PORT)
     console.log('Server has started');
 })
-
+*/
 
 
 
